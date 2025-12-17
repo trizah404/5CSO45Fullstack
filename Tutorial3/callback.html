@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DOCUMENT</title>
+</head>
+<body>
+    <script>
+    // a function that is passed as an argument in another function is called CALLBACK FUNCTION 
+    function greet (name , callback){
+        console.log(`hii ${name}`) 
+        callback ("jordan") 
+
+    }
+    function sayBye(name ){
+        console.log ("goodbye"+ name )
+    }
+
+    greet('Robert',sayBye)
+
+        
+        
+    </script>
+
+
+</body>
+</html>

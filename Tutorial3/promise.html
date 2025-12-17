@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DOCUMENT</title>
+</head>
+<body>
+    <script>
+       const mypromise= new Promise ((resolve , reject )=> { 
+
+         let success = true; 
+         if (success){
+            resolve("task completed")
+
+         }else {
+            reject(" task faild ")
+
+         }
+
+       })
+
+       mypromise.then ((message) => {
+        console.log (message)
+
+       })
+
+       .catch ((error)=> {
+        console.log(erorr)
+
+
+       })
+
+
+
+        
+        
+    </script>
+
+
+</body>
+</html>
