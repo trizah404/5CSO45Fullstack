@@ -1,0 +1,22 @@
+<?php
+$host = 'localhost';
+$database = 'week10';
+$username = 'root';
+$password = '';
+
+$options = [
+    PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+    PDO::ATTR_EMULATE_PREPARES => false,             // better security
+    PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC
+];
+
+try {
+    $pdo = new PDO(
+        "mysql:host=$host;dbname=$database;charset=utf8mb4",
+        $username,
+        $password,
+        $options
+    );
+} catch (PDOException $e) {
+    die('Database connection failed.');
+}
