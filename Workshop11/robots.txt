@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Sitemap: http://localhost/Workshop11/sitemap.xml
+
+# This guides search engines on how to crawl your site and tells them where your sitemap is located.
